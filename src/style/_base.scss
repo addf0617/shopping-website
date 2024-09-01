@@ -1,0 +1,39 @@
+:root {
+  --primary-color: #e6c744;
+  --white-color: #ffffff;
+  --black-color: #000000;
+  --gray-color: #c2c8da;
+  --primary-font: "Poppins", sans-serif;
+}
+
+@font-face {
+  font-family: "Poppins";
+  src: url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;900&display=swap");
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Poppins";
+  src: url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;900&display=swap");
+  font-weight: 500;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Poppins";
+  src: url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;900&display=swap");
+  font-weight: 900;
+  font-style: normal;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  width: 100%;
+  min-height: 100vw;
+  background-color: var(--white-color);
+  font-family: var(--primary-font), sans-serif;
+}
