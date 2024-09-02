@@ -29,6 +29,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  text-decoration: none;
 }
 
 body {
@@ -36,4 +37,6 @@ body {
   min-height: 100vw;
   background-color: var(--white-color);
   font-family: var(--primary-font), sans-serif;
+  display: flex;
+  justify-content: center;
 }
