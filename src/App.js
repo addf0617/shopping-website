@@ -8,7 +8,7 @@ import {
 import Layout from "./components/layout";
 import Homepage from "./pages/homepage";
 
-/* import "./style/main.css"; */
+import "./style/main.css";
 
 const router = createBrowserRouter(
   createRoutesFromElements(
