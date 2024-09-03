@@ -1,3 +1,4 @@
+@charset "UTF-8";
 :root {
   --primary-color: #e6c744;
   --white-color: #ffffff;
@@ -37,10 +38,15 @@ h1 {
   font-weight: 900;
 }
 
+a {
+  text-decoration: none;
+}
+
 nav .logo img {
   height: 1.5rem;
 }
 nav .logo h1 {
+  font-size: 1.75rem;
   margin: 0;
 }
 nav ul {
@@ -59,4 +65,58 @@ nav ul li .nav-btn {
   color: var(--white-color);
   border: none;
   border-radius: 0.25rem;
+}
+
+@media screen and (min-width: 992px) {
+  nav .navbar-collapse ul {
+    gap: 2rem;
+  }
+}
+footer {
+  background-color: var(--black-color);
+  color: var(--gray-color);
+  padding: 4rem 3rem;
+  /* font-size: 1.25rem; 螢幕放大時再更改*/
+}
+footer p,
+footer ul {
+  opacity: 0.8;
+}
+footer .container .row {
+  justify-content: space-between;
+}
+footer .container .row .footer-logo h1 {
+  color: var(--white-color);
+}
+footer .container .row .footer-logo .icon-container {
+  display: flex;
+  gap: 0.5rem;
+  align-items: center;
+}
+footer .container .row .footer-logo .icon-container a {
+  color: var(--black-color);
+  display: block;
+  padding: 0.25rem 0.75rem;
+  background-color: #ebd96b;
+  border-radius: 0.5rem;
+}
+footer .container .row .footer-links .row ul {
+  gap: 0.75rem;
+}
+footer .container .row .footer-links .row ul li a {
+  color: var(--gray-color);
+}
+footer .container .row .footer-links .row ul li:first-child a {
+  opacity: 1;
+  color: var(--white-color);
+}
+
+@media screen and (min-width: 992px) {
+  footer {
+    font-size: 1.2rem;
+  }
+  footer .footer-links .row ul {
+    font-size: 1.2rem;
+    gap: 1.25rem !important;
+  }
 }/*# sourceMappingURL=main.css.map */

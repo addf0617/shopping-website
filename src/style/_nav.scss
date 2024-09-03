@@ -4,6 +4,7 @@ nav {
       height: 1.5rem;
     }
     h1 {
+      font-size: 1.75rem;
       margin: 0;
     }
   }
@@ -21,6 +22,16 @@ nav {
         color: var(--white-color);
         border: none;
         border-radius: 0.25rem;
+      }
+    }
+  }
+}
+
+@include respond-to(lg) {
+  nav {
+    .navbar-collapse {
+      ul {
+        gap: 2rem;
       }
     }
   }

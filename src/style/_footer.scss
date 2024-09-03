@@ -1,0 +1,64 @@
+footer {
+  background-color: var(--black-color);
+  color: var(--gray-color);
+  padding: 4rem 3rem;
+  /* font-size: 1.25rem; 螢幕放大時再更改*/
+  p,
+  ul {
+    opacity: 0.8;
+  }
+  .container {
+    .row {
+      justify-content: space-between;
+      .footer-logo {
+        h1 {
+          color: var(--white-color);
+        }
+        .icon-container {
+          display: flex;
+          gap: 0.5rem;
+          align-items: center;
+          a {
+            color: var(--black-color);
+            display: block;
+            padding: 0.25rem 0.75rem;
+            background-color: #ebd96b;
+            border-radius: 0.5rem;
+          }
+        }
+      }
+      .footer-links {
+        .row {
+          ul {
+            gap: 0.75rem;
+            li {
+              a {
+                color: var(--gray-color);
+              }
+              &:first-child {
+                a {
+                  opacity: 1;
+                  color: var(--white-color);
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@include respond-to(lg) {
+  footer {
+    font-size: 1.2rem;
+    .footer-links {
+      .row {
+        ul {
+          font-size: 1.2rem;
+          gap: 1.25rem !important;
+        }
+      }
+    }
+  }
+}

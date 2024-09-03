@@ -6,6 +6,8 @@
   --primary-font: "Poppins", sans-serif;
 }
 
+$breakpoint-lg: 992px;
+
 @font-face {
   font-family: "Poppins";
   src: url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;900&display=swap");
@@ -35,4 +37,7 @@ body {
 }
 h1 {
   font-weight: 900;
+}
+a {
+  text-decoration: none;
 }
