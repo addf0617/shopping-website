@@ -4,7 +4,7 @@ import logo from "../images/logo.svg";
 const NavComponent = () => {
   return (
     <div>
-      <nav className="navbar navbar-expand-md bg-light ">
+      <nav className="navbar navbar-expand-md">
         <div className="container">
           <div className="logo navbar-brand d-flex align-items-center ">
             <img src={logo} alt="logo" />
@@ -22,7 +22,7 @@ const NavComponent = () => {
             <span class="navbar-toggler-icon"></span>
           </button>
           <div
-            className="collapse navbar-collapse "
+            className="collapse navbar-collapse justify-content-end"
             id="navbarSupportedContent"
           >
             <ul className="navbar-nav">
