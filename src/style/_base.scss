@@ -3,10 +3,12 @@
   --white-color: #ffffff;
   --black-color: #000000;
   --gray-color: #c2c8da;
+  --light-gray-color: #f4f6f5;
   --primary-font: "Poppins", sans-serif;
 }
 
 $breakpoint-lg: 992px;
+$breakpoint-md: 768px;
 
 @font-face {
   font-family: "Poppins";

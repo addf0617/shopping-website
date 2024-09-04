@@ -4,6 +4,7 @@
   --white-color: #ffffff;
   --black-color: #000000;
   --gray-color: #c2c8da;
+  --light-gray-color: #f4f6f5;
   --primary-font: "Poppins", sans-serif;
 }
 
@@ -42,6 +43,9 @@ a {
   text-decoration: none;
 }
 
+nav .logo {
+  cursor: pointer;
+}
 nav .logo img {
   height: 1.5rem;
 }
@@ -72,6 +76,90 @@ nav ul li .nav-btn {
     gap: 2rem;
   }
 }
+.hero h1 {
+  font-size: 2.5rem;
+}
+.hero .container {
+  background-color: var(--light-gray-color);
+  border-radius: 2rem;
+  padding: 1.75rem 3rem 0 3rem;
+}
+.hero .container .row {
+  justify-content: center;
+}
+.hero .container .row .hero-text {
+  display: flex;
+  align-items: center;
+}
+.hero .container .row .hero-img {
+  position: relative;
+}
+.hero .container .row .hero-img i {
+  position: absolute;
+  color: var(--gray-color);
+  font-size: 1.5rem;
+}
+.hero .container .row .hero-img .star-2 {
+  top: 10px;
+  right: 60px;
+}
+.hero .container .row .hero-img .star-3 {
+  bottom: 15px;
+  left: 15px;
+}
+.hero .container .row .hero-img .star-4 {
+  bottom: 40px;
+  right: 10px;
+}
+.hero .container .row .hero-img img {
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.hero .slanted-bg {
+  position: relative;
+}
+.hero .slanted-bg h1 {
+  position: relative;
+  z-index: 1;
+}
+.hero .slanted-bg .bg {
+  min-width: 8rem;
+  width: 70%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  transform: translateY(-10%) rotate(-1.5deg);
+}
+.hero .slanted-bg .white-bg {
+  background-color: var(--white-color);
+}
+.hero .slanted-bg .yellow-bg {
+  background-color: var(--primary-color);
+}
+
+@media screen and (min-width: 768px) {
+  .hero .container .row .hero-text {
+    justify-content: center;
+  }
+  .hero .container .row .hero-img i {
+    font-size: 2rem;
+  }
+  .hero p,
+  .hero button {
+    font-size: 1.5rem;
+  }
+}
+@media screen and (min-width: 992px) {
+  .hero h1 {
+    font-size: 3rem;
+  }
+  .hero button {
+    padding: 0.5rem 1.5rem;
+    margin-bottom: 0.5rem;
+  }
+}
 footer {
   background-color: var(--black-color);
   color: var(--gray-color);
@@ -90,6 +178,7 @@ footer .container .row .footer-logo h1 {
 }
 footer .container .row .footer-logo .icon-container {
   display: flex;
+  flex-wrap: wrap;
   gap: 0.5rem;
   align-items: center;
 }

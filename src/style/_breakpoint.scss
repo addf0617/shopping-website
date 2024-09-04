@@ -4,4 +4,11 @@
       @content;
     }
   }
+  @if $breakpoint == md {
+    @media screen and (min-width: $breakpoint-md) {
+      @content;
+    }
+  } @else {
+    @warn "Breakpoint '#{$breakpoint}' not supported";
+  }
 }

@@ -3,7 +3,7 @@ import logo from "../images/logo.svg";
 
 const NavComponent = () => {
   return (
-    <div>
+    <header>
       <nav className="navbar navbar-expand-md">
         <div className="container">
           <div className="logo navbar-brand d-flex align-items-center ">
@@ -37,7 +37,7 @@ const NavComponent = () => {
           </div>
         </div>
       </nav>
-    </div>
+    </header>
   );
 };
 
