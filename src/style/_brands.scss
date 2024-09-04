@@ -1,0 +1,18 @@
+.brands {
+  margin: 2rem 0;
+  background-color: var(--primary-color);
+  .container {
+    .img-container {
+      flex-wrap: nowrap;
+      align-items: center;
+      justify-content: space-around;
+      overflow-x: scroll;
+      scrollbar-width: none;
+      padding: 1rem;
+      img {
+        max-width: 100%;
+        object-fit: cover;
+      }
+    }
+  }
+}

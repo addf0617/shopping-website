@@ -28,7 +28,7 @@
 }
 body {
   width: 100%;
-  min-height: 100vw;
+  min-height: 100vh;
   background-color: var(--white-color);
   font-family: var(--primary-font), sans-serif;
   /* display: flex;
@@ -160,6 +160,23 @@ nav ul li .nav-btn {
     margin-bottom: 0.5rem;
   }
 }
+.brands {
+  margin: 2rem 0;
+  background-color: var(--primary-color);
+}
+.brands .container .img-container {
+  flex-wrap: nowrap;
+  align-items: center;
+  justify-content: space-around;
+  overflow-x: scroll;
+  padding: 1rem;
+}
+.brands .container .img-container img {
+  max-width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
 footer {
   background-color: var(--black-color);
   color: var(--gray-color);
