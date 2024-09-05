@@ -1,0 +1,30 @@
+.new-arrivals {
+  margin: 2rem 0;
+  .container {
+    .card {
+      border: none;
+      img {
+        object-fit: cover;
+      }
+      .card-info {
+        margin-top: 1rem;
+        display: flex;
+        align-items: center;
+        .card-text {
+          p {
+            color: var(--dark-gray-color);
+          }
+        }
+        i {
+          font-size: 1.5rem;
+          color: var(--dark-gray-color);
+          cursor: pointer;
+          transition: all 0.5s ease;
+          &:hover {
+            transform: translateX(10px);
+          }
+        }
+      }
+    }
+  }
+}
