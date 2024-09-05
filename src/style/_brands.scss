@@ -16,3 +16,13 @@
     }
   }
 }
+
+@include respond-to(lg) {
+  .brands {
+    .container {
+      .img-container {
+        overflow-x: auto;
+      }
+    }
+  }
+}

@@ -4,6 +4,7 @@
   --white-color: #ffffff;
   --black-color: #000000;
   --gray-color: #c2c8da;
+  --dark-gray-color: #7f7f7f;
   --light-gray-color: #f4f6f5;
   --primary-font: "Poppins", sans-serif;
 }
@@ -35,14 +36,33 @@ body {
   justify-content: center; */
 }
 
-h1 {
+h1,
+h2 {
   font-weight: 900;
+}
+
+h3,
+h4,
+h5,
+h6 {
+  font-weight: 500;
 }
 
 a {
   text-decoration: none;
 }
 
+@keyframes arrowMovesRight {
+  0% {
+    transform: translateX(0);
+  }
+  50% {
+    transform: translateX(20px);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
 nav .logo {
   cursor: pointer;
 }
@@ -169,12 +189,46 @@ nav ul li .nav-btn {
   align-items: center;
   justify-content: space-around;
   overflow-x: scroll;
+  scrollbar-width: none;
   padding: 1rem;
 }
 .brands .container .img-container img {
   max-width: 100%;
   -o-object-fit: cover;
      object-fit: cover;
+}
+
+@media screen and (min-width: 992px) {
+  .brands .container .img-container {
+    overflow-x: auto;
+  }
+}
+.new-arrivals {
+  margin: 2rem 0;
+}
+.new-arrivals .container .card {
+  border: none;
+}
+.new-arrivals .container .card img {
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.new-arrivals .container .card .card-info {
+  margin-top: 1rem;
+  display: flex;
+  align-items: center;
+}
+.new-arrivals .container .card .card-info .card-text p {
+  color: var(--dark-gray-color);
+}
+.new-arrivals .container .card .card-info i {
+  font-size: 1.5rem;
+  color: var(--dark-gray-color);
+  cursor: pointer;
+  transition: all 0.5s ease;
+}
+.new-arrivals .container .card .card-info i:hover {
+  transform: translateX(10px);
 }
 
 footer {

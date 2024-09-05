@@ -3,6 +3,7 @@
   --white-color: #ffffff;
   --black-color: #000000;
   --gray-color: #c2c8da;
+  --dark-gray-color: #7f7f7f;
   --light-gray-color: #f4f6f5;
   --primary-font: "Poppins", sans-serif;
 }
@@ -37,8 +38,15 @@ body {
   /* display: flex;
   justify-content: center; */
 }
-h1 {
+h1,
+h2 {
   font-weight: 900;
+}
+h3,
+h4,
+h5,
+h6 {
+  font-weight: 500;
 }
 a {
   text-decoration: none;
