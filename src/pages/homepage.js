@@ -2,6 +2,7 @@ import React from "react";
 import HeroComponent from "../components/hero-component";
 import BrandsComponent from "../components/brands-component";
 import NewArrivalsComponent from "../components/newArrivals-component";
+import PaydayComponent from "../components/payday-component";
 
 const Homepage = () => {
   return (
@@ -12,6 +13,7 @@ const Homepage = () => {
         <h2>NEW ARRIVALS</h2>
       </div>
       <NewArrivalsComponent />
+      <PaydayComponent />
     </div>
   );
 };
