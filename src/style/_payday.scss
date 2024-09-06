@@ -1,0 +1,68 @@
+.payday {
+  margin: 2rem 0;
+  background: linear-gradient(
+    -90deg,
+    #e0c340,
+    #e7c845,
+    #e9ca48,
+    #f4d84f,
+    #f9dd55,
+    #f9df56
+  );
+  .container {
+    background: none;
+    .row {
+      .hero-img {
+        i {
+          opacity: 0.5;
+          color: var(--light-gray-color) !important;
+          transform: rotate(-20deg);
+        }
+        .star-1 {
+          top: 50px;
+        }
+        .star-2 {
+        }
+        .star-3 {
+          bottom: 100px;
+          left: 40px;
+        }
+        .star-4 {
+          bottom: 50px;
+          right: 40px;
+        }
+        img {
+          object-fit: cover;
+        }
+      }
+      .hero-text {
+        .hint {
+          gap: 0.5rem;
+          p {
+            margin: 0;
+          }
+        }
+        .shop-btn {
+          button {
+            margin: 1rem 0;
+          }
+        }
+      }
+    }
+  }
+  .slanted-bg {
+    .bg {
+      width: 13rem;
+    }
+  }
+}
+
+@include respond-to(lg) {
+  .hero {
+    .slanted-bg {
+      .bg {
+        width: 50%;
+      }
+    }
+  }
+}

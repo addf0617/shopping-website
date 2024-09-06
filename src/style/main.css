@@ -52,17 +52,6 @@ a {
   text-decoration: none;
 }
 
-@keyframes arrowMovesRight {
-  0% {
-    transform: translateX(0);
-  }
-  50% {
-    transform: translateX(20px);
-  }
-  100% {
-    transform: translateX(0);
-  }
-}
 nav .logo {
   cursor: pointer;
 }
@@ -231,6 +220,51 @@ nav ul li .nav-btn {
   transform: translateX(10px);
 }
 
+.payday {
+  margin: 2rem 0;
+  background: linear-gradient(-90deg, #e0c340, #e7c845, #e9ca48, #f4d84f, #f9dd55, #f9df56);
+}
+.payday .container {
+  background: none;
+}
+.payday .container .row .hero-img i {
+  opacity: 0.5;
+  color: var(--light-gray-color) !important;
+  transform: rotate(-20deg);
+}
+.payday .container .row .hero-img .star-1 {
+  top: 50px;
+}
+.payday .container .row .hero-img .star-3 {
+  bottom: 100px;
+  left: 40px;
+}
+.payday .container .row .hero-img .star-4 {
+  bottom: 50px;
+  right: 40px;
+}
+.payday .container .row .hero-img img {
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.payday .container .row .hero-text .hint {
+  gap: 0.5rem;
+}
+.payday .container .row .hero-text .hint p {
+  margin: 0;
+}
+.payday .container .row .hero-text .shop-btn button {
+  margin: 1rem 0;
+}
+.payday .slanted-bg .bg {
+  width: 13rem;
+}
+
+@media screen and (min-width: 992px) {
+  .hero .slanted-bg .bg {
+    width: 50%;
+  }
+}
 footer {
   background-color: var(--black-color);
   color: var(--gray-color);
