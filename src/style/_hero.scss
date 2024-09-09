@@ -38,28 +38,6 @@
       }
     }
   }
-  .slanted-bg {
-    position: relative;
-    h1 {
-      position: relative;
-      z-index: 1;
-    }
-    .bg {
-      min-width: 8rem;
-      width: 70%;
-      height: 100%;
-      position: absolute;
-      top: 0;
-      left: 0;
-      transform: translateY(-10%) rotate(-1.5deg);
-    }
-    .white-bg {
-      background-color: var(--white-color);
-    }
-    .yellow-bg {
-      background-color: var(--primary-color);
-    }
-  }
 }
 
 @include respond-to(md) {
