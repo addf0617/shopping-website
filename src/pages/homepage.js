@@ -10,10 +10,16 @@ const Homepage = () => {
       <HeroComponent />
       <BrandsComponent />
       <div className="container">
-        <h2>NEW ARRIVALS</h2>
+        <h2 className="leaves-bg">NEW ARRIVALS</h2>
       </div>
       <NewArrivalsComponent />
       <PaydayComponent />
+      <div className="container">
+        <div className="leaves-bg">
+          <h2>Young's Favorite</h2>
+          <div className="bg"></div>
+        </div>
+      </div>
     </div>
   );
 };
