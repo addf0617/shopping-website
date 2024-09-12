@@ -15,7 +15,10 @@ const router = createBrowserRouter(
     <Route path="/" element={<Layout />}>
       <Route index element={<Homepage />} />
     </Route>
-  )
+  ),
+  {
+    basename: "/shopping-website",
+  }
 );
 
 function App() {
