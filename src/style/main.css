@@ -52,6 +52,57 @@ a {
   text-decoration: none;
 }
 
+.slanted-bg {
+  position: relative;
+}
+.slanted-bg h1,
+.slanted-bg h2,
+.slanted-bg h3,
+.slanted-bg h4,
+.slanted-bg h5,
+.slanted-bg h6,
+.slanted-bg p {
+  position: relative;
+  z-index: 1;
+}
+.slanted-bg .bg {
+  min-width: 8rem;
+  width: 70%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  transform: translateY(-10%) rotate(-1.5deg);
+}
+.slanted-bg .white-bg {
+  background-color: var(--white-color);
+}
+.slanted-bg .yellow-bg {
+  background-color: var(--primary-color);
+}
+
+.leaves-bg {
+  position: relative;
+}
+.leaves-bg h1,
+.leaves-bg h2,
+.leaves-bg h3,
+.leaves-bg h4,
+.leaves-bg h5,
+.leaves-bg h6,
+.leaves-bg p {
+  position: relative;
+  z-index: 1;
+}
+.leaves-bg .bg {
+  width: 10rem;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  transform: scale(2, 0.5) rotate(-10deg);
+}
+
 nav .logo {
   cursor: pointer;
 }
@@ -125,28 +176,6 @@ nav ul li .nav-btn {
   -o-object-fit: cover;
      object-fit: cover;
 }
-.hero .slanted-bg {
-  position: relative;
-}
-.hero .slanted-bg h1 {
-  position: relative;
-  z-index: 1;
-}
-.hero .slanted-bg .bg {
-  min-width: 8rem;
-  width: 70%;
-  height: 100%;
-  position: absolute;
-  top: 0;
-  left: 0;
-  transform: translateY(-10%) rotate(-1.5deg);
-}
-.hero .slanted-bg .white-bg {
-  background-color: var(--white-color);
-}
-.hero .slanted-bg .yellow-bg {
-  background-color: var(--primary-color);
-}
 
 @media screen and (min-width: 768px) {
   .hero .container .row .hero-text {
@@ -195,29 +224,34 @@ nav ul li .nav-btn {
 .new-arrivals {
   margin: 2rem 0;
 }
-.new-arrivals .container .card {
+
+.custom-card {
   border: none;
 }
-.new-arrivals .container .card img {
+.custom-card img {
   -o-object-fit: cover;
      object-fit: cover;
 }
-.new-arrivals .container .card .card-info {
+.custom-card .card-info {
   margin-top: 1rem;
   display: flex;
   align-items: center;
 }
-.new-arrivals .container .card .card-info .card-text p {
+.custom-card .card-info .card-text p {
   color: var(--dark-gray-color);
 }
-.new-arrivals .container .card .card-info i {
+.custom-card .card-info i {
   font-size: 1.5rem;
   color: var(--dark-gray-color);
   cursor: pointer;
   transition: all 0.5s ease;
 }
-.new-arrivals .container .card .card-info i:hover {
+.custom-card .card-info i:hover {
   transform: translateX(10px);
+}
+
+.young-fav {
+  margin: 2rem 0;
 }
 
 .payday {

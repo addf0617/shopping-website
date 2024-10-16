@@ -1,0 +1,50 @@
+.slanted-bg {
+  position: relative;
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6,
+  p {
+    position: relative;
+    z-index: 1;
+  }
+  .bg {
+    min-width: 8rem;
+    width: 70%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: translateY(-10%) rotate(-1.5deg);
+  }
+  .white-bg {
+    background-color: var(--white-color);
+  }
+  .yellow-bg {
+    background-color: var(--primary-color);
+  }
+}
+
+.leaves-bg {
+  position: relative;
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6,
+  p {
+    position: relative;
+    z-index: 1;
+  }
+  .bg {
+    width: 10rem;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: scale(2, 0.5) rotate(-10deg);
+  }
+}
