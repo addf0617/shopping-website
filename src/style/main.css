@@ -224,29 +224,34 @@ nav ul li .nav-btn {
 .new-arrivals {
   margin: 2rem 0;
 }
-.new-arrivals .container .card {
+
+.custom-card {
   border: none;
 }
-.new-arrivals .container .card img {
+.custom-card img {
   -o-object-fit: cover;
      object-fit: cover;
 }
-.new-arrivals .container .card .card-info {
+.custom-card .card-info {
   margin-top: 1rem;
   display: flex;
   align-items: center;
 }
-.new-arrivals .container .card .card-info .card-text p {
+.custom-card .card-info .card-text p {
   color: var(--dark-gray-color);
 }
-.new-arrivals .container .card .card-info i {
+.custom-card .card-info i {
   font-size: 1.5rem;
   color: var(--dark-gray-color);
   cursor: pointer;
   transition: all 0.5s ease;
 }
-.new-arrivals .container .card .card-info i:hover {
+.custom-card .card-info i:hover {
   transform: translateX(10px);
+}
+
+.young-fav {
+  margin: 2rem 0;
 }
 
 .payday {
