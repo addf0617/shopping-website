@@ -11,13 +11,13 @@ const NewArrivalsComponent = () => {
       <div className="container">
         <div className="row">
           <div className="col-md-6 col-lg-4">
-            <CardComponent img={hoodies} />
+            <CardComponent img={hoodies} title={"Hoodies & Sweatshirt"} />
           </div>
           <div className="col-md-6 col-lg-4">
-            <CardComponent img={coats} />
+            <CardComponent img={coats} title={"Coats & Parkas"} />
           </div>
           <div className="col-md-6 col-lg-4">
-            <CardComponent img={TShirt} />
+            <CardComponent img={TShirt} title={"Tee & T-Shirt"} />
           </div>
         </div>
       </div>

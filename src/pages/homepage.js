@@ -26,10 +26,10 @@ const Homepage = () => {
           </div>
           <div className="row young-fav-card-container">
             <div className="col-md-6 col-lg-6">
-              <CardComponent img={fav2} />
+              <CardComponent img={fav2} title={"Trending on instagram"} />
             </div>
             <div className="col-md-6 col-lg-6">
-              <CardComponent img={fav1} />
+              <CardComponent img={fav1} title={"All Under $40"} />
             </div>
           </div>
         </div>
