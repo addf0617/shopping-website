@@ -32,8 +32,6 @@ body {
   min-height: 100vh;
   background-color: var(--white-color);
   font-family: var(--primary-font), sans-serif;
-  /* display: flex;
-  justify-content: center; */
 }
 
 h1,
@@ -250,7 +248,7 @@ nav ul li .nav-btn {
   transform: translateX(10px);
 }
 
-.young-fav {
+.young-fav .young-fav-card-container {
   margin: 2rem 0;
 }
 
@@ -297,6 +295,62 @@ nav ul li .nav-btn {
 @media screen and (min-width: 992px) {
   .hero .slanted-bg .bg {
     width: 50%;
+  }
+}
+.send-email-section {
+  background-color: var(--primary-color);
+}
+.send-email-section .container {
+  display: flex;
+  justify-content: center;
+  padding: 2rem;
+}
+.send-email-section .container h1,
+.send-email-section .container h2,
+.send-email-section .container h3,
+.send-email-section .container h4,
+.send-email-section .container h5,
+.send-email-section .container h6,
+.send-email-section .container p {
+  color: var(--white-color);
+}
+.send-email-section .container .send-email-textContainer {
+  margin: 2rem 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 10px;
+}
+.send-email-section .container .send-email-textContainer .send-email-input-group {
+  justify-content: center;
+  position: relative;
+}
+.send-email-section .container .send-email-textContainer .send-email-input-group .send-email-input {
+  min-width: 250px;
+  width: 100%;
+  height: 4rem;
+  padding: 1rem;
+  padding-right: 70px;
+  font-size: 1rem;
+  border: none;
+  border-radius: 0.5rem;
+}
+.send-email-section .container .send-email-textContainer .send-email-input-group .send-email-button {
+  padding: 0.25rem 1rem;
+  font-size: 1.5rem;
+  border: none;
+  border-radius: 0.5rem;
+  background-color: var(--black-color);
+  color: var(--white-color);
+  position: absolute;
+  top: 10px;
+  right: 8px;
+}
+
+@media screen and (min-width: 768px) {
+  .send-email-section .container .send-email-textContainer .send-email-input-group .send-email-input {
+    font-size: 1.25rem;
   }
 }
 footer {

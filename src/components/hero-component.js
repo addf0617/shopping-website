@@ -26,10 +26,10 @@ const HeroComponent = () => {
             </div>
           </div>
           <div className="col-lg-6 d-flex hero-img">
-            <i class="fa-solid fa-star star-1"></i>
-            <i class="fa-solid fa-star star-2"></i>
-            <i class="fa-solid fa-star star-3"></i>
-            <i class="fa-solid fa-star star-4"></i>
+            <i className="fa-solid fa-star star-1"></i>
+            <i className="fa-solid fa-star star-2"></i>
+            <i className="fa-solid fa-star star-3"></i>
+            <i className="fa-solid fa-star star-4"></i>
             <img src={heroPNG} alt="Hero-section-image" />
           </div>
         </div>
