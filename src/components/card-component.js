@@ -6,7 +6,9 @@ const CardComponent = (props) => {
   return (
     <div className="card custom-card">
       <a href="#">
-        <img src={img} className="card-img-top" alt="Hoodies & Sweatshirt" />
+        <div className="img-container">
+          <img src={img} className="card-img-top" alt="Hoodies & Sweatshirt" />
+        </div>
       </a>
       <div className="card-info">
         <div className="card-text col-11">

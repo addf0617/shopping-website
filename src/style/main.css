@@ -121,6 +121,9 @@ nav ul li {
   font-size: 1rem;
   cursor: pointer;
 }
+nav ul li:hover {
+  color: var(--primary-color);
+}
 nav ul li .nav-btn {
   padding: 0.5rem 0.75rem;
   background-color: var(--black-color);
@@ -226,9 +229,16 @@ nav ul li .nav-btn {
 .custom-card {
   border: none;
 }
+.custom-card .img-container {
+  overflow: hidden;
+}
 .custom-card img {
   -o-object-fit: cover;
      object-fit: cover;
+  transition: all 0.25s ease;
+}
+.custom-card img:hover {
+  transform: scale(1.1);
 }
 .custom-card .card-info {
   margin-top: 1rem;
