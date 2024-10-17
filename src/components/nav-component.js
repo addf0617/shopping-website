@@ -11,7 +11,7 @@ const NavComponent = () => {
             <h1>FASHION</h1>
           </div>
           <button
-            class="navbar-toggler"
+            className="navbar-toggler"
             type="button"
             data-bs-toggle="collapse"
             data-bs-target="#navbarSupportedContent"
@@ -19,7 +19,7 @@ const NavComponent = () => {
             aria-expanded="false"
             aria-label="Toggle navigation"
           >
-            <span class="navbar-toggler-icon"></span>
+            <span className="navbar-toggler-icon"></span>
           </button>
           <div
             className="collapse navbar-collapse justify-content-end"

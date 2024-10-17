@@ -11,16 +11,16 @@ const FooterComponent = () => {
               <p>Complete your style with awesome clothes from us.</p>
               <div className="icon-container">
                 <a href="#">
-                  <i class="fa-brands fa-facebook-f"></i>
+                  <i className="fa-brands fa-facebook-f"></i>
                 </a>
                 <a href="#">
-                  <i class="fa-brands fa-instagram"></i>
+                  <i className="fa-brands fa-instagram"></i>
                 </a>
                 <a href="#">
-                  <i class="fa-brands fa-twitter"></i>
+                  <i className="fa-brands fa-twitter"></i>
                 </a>
                 <a href="#">
-                  <i class="fa-brands fa-linkedin-in"></i>
+                  <i className="fa-brands fa-linkedin-in"></i>
                 </a>
               </div>
             </div>

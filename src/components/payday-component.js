@@ -7,10 +7,10 @@ const PaydayComponent = () => {
       <div className="container">
         <div className="row g-3">
           <div className="col-lg-6 hero-img">
-            <i class="fa-solid fa-star star-1"></i>
-            <i class="fa-solid fa-star star-2"></i>
-            <i class="fa-solid fa-star star-3"></i>
-            <i class="fa-solid fa-star star-4"></i>
+            <i className="fa-solid fa-star star-1"></i>
+            <i className="fa-solid fa-star star-2"></i>
+            <i className="fa-solid fa-star star-3"></i>
+            <i className="fa-solid fa-star star-4"></i>
             <img src={paydayImg} alt="payday-Image" />
           </div>
           <div className="col-lg-6 hero-text">

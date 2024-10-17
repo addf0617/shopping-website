@@ -14,7 +14,7 @@ const CardComponent = (props) => {
           <p>Explore Now!</p>
         </div>
         <a href="#">
-          <i class="fa-solid fa-arrow-right"></i>
+          <i className="fa-solid fa-arrow-right"></i>
         </a>
       </div>
     </div>
