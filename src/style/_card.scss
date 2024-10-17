@@ -1,7 +1,14 @@
 .custom-card {
   border: none;
+  .img-container {
+    overflow: hidden;
+  }
   img {
     object-fit: cover;
+    transition: all 0.25s ease;
+    &:hover {
+      transform: scale(1.1);
+    }
   }
   .card-info {
     margin-top: 1rem;
