@@ -7,6 +7,7 @@ import {
 
 import Layout from "./pages/layout";
 import Homepage from "./pages/homepage";
+import NotFoundPage from "./pages/notfoundPage";
 
 import "./style/main.css";
 
@@ -14,6 +15,7 @@ const router = createBrowserRouter(
   createRoutesFromElements(
     <Route path="/" element={<Layout />}>
       <Route index element={<Homepage />} />
+      <Route path="*" element={<NotFoundPage />} />
     </Route>
   ),
   {
