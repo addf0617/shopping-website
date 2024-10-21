@@ -1,0 +1,15 @@
+.asideBar {
+  ul {
+    a {
+      font-size: 1.2rem;
+      cursor: pointer;
+      color: var(--black-color);
+      &:hover {
+        color: var(--primary-color);
+      }
+      &.active {
+        color: var(--primary-color);
+      }
+    }
+  }
+}

@@ -1,8 +1,8 @@
 import React from "react";
 import { Link } from "react-router-dom";
 
-const CardComponent = (props) => {
-  const { img, link, title } = props;
+const ShopPageCard = (props) => {
+  const { link, img, title, price } = props;
 
   return (
     <div className="card custom-card">
@@ -14,7 +14,7 @@ const CardComponent = (props) => {
       <div className="card-info">
         <div className="card-text col-11">
           <h4>{title ? title : "title"}</h4>
-          <p>Explore Now!</p>
+          <p>$ {price}</p>
         </div>
         <Link href={link ? link : "#"}>
           <i className="fa-solid fa-arrow-right"></i>
@@ -24,4 +24,4 @@ const CardComponent = (props) => {
   );
 };
 
-export default CardComponent;
+export default ShopPageCard;

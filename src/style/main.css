@@ -101,30 +101,39 @@ a {
   transform: scale(2, 0.5) rotate(-10deg);
 }
 
-nav .logo {
+.navbar .logo {
   cursor: pointer;
 }
-nav .logo img {
+.navbar .logo a {
+  display: flex;
+  align-items: center;
+  color: var(--black-color);
+}
+.navbar .logo a img {
   height: 1.5rem;
 }
-nav .logo h1 {
+.navbar .logo a h1 {
   font-size: 1.75rem;
   margin: 0;
 }
-nav ul {
+.navbar ul {
   gap: 1rem;
   display: flex;
   flex-direction: column;
   align-items: center;
 }
-nav ul li {
+.navbar ul a {
   font-size: 1rem;
+  color: var(--black-color);
   cursor: pointer;
 }
-nav ul li:hover {
+.navbar ul a.active {
   color: var(--primary-color);
 }
-nav ul li .nav-btn {
+.navbar ul a:hover {
+  color: var(--primary-color);
+}
+.navbar ul a .nav-btn {
   padding: 0.5rem 0.75rem;
   background-color: var(--black-color);
   color: var(--white-color);
@@ -363,6 +372,22 @@ nav ul li .nav-btn {
     font-size: 1.25rem;
   }
 }
+.asideBar ul a {
+  font-size: 1.2rem;
+  cursor: pointer;
+  color: var(--black-color);
+}
+.asideBar ul a:hover {
+  color: var(--primary-color);
+}
+.asideBar ul a.active {
+  color: var(--primary-color);
+}
+
+.shop-page {
+  margin: 2rem 0;
+}
+
 footer {
   background-color: var(--black-color);
   color: var(--gray-color);
