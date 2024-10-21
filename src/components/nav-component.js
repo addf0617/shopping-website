@@ -1,4 +1,5 @@
 import React from "react";
+import { NavLink, Link } from "react-router-dom";
 import logo from "../images/logo.svg";
 
 const NavComponent = () => {
@@ -6,10 +7,13 @@ const NavComponent = () => {
     <header>
       <nav className="navbar navbar-expand-md">
         <div className="container">
-          <div className="logo navbar-brand d-flex align-items-center ">
-            <img src={logo} alt="logo" />
-            <h1>FASHION</h1>
+          <div className="logo navbar-brand">
+            <NavLink>
+              <img src={logo} alt="logo" />
+              <h1>FASHION</h1>
+            </NavLink>
           </div>
+
           <button
             className="navbar-toggler"
             type="button"
@@ -26,13 +30,21 @@ const NavComponent = () => {
             id="navbarSupportedContent"
           >
             <ul className="navbar-nav">
-              <li className="nav-item">CATALOGUE</li>
-              <li className="nav-item">FASHION</li>
-              <li className="nav-item">FAVOURITE</li>
-              <li className="nav-item">LIFESTYLE</li>
-              <li className="nav-item">
+              <NavLink to={"/"} className="nav-item">
+                CATALOGUE
+              </NavLink>
+              <NavLink to={"/shop"} className="nav-item">
+                FASHION
+              </NavLink>
+              <NavLink to={"/shop"} className="nav-item">
+                FAVOURITE
+              </NavLink>
+              <NavLink to={"/shop"} className="nav-item">
+                LIFESTYLE
+              </NavLink>
+              <NavLink className="nav-item">
                 <button className="nav-btn">SIGN UP</button>
-              </li>
+              </NavLink>
             </ul>
           </div>
         </div>
