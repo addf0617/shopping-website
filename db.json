@@ -1,0 +1,34 @@
+{
+  "products": [
+    {
+      "id": 1,
+      "title": "新品套裝",
+      "price": 200,
+      "img": "/public/image/product1.jpg"
+    },
+    {
+      "id": 2,
+      "title": "休閒鞋",
+      "price": 50,
+      "img": "/public/image/product2.jpg"
+    },
+    {
+      "id": 3,
+      "title": "手提包",
+      "price": 80,
+      "img": "/public/image/product3.jpg"
+    },
+    {
+      "id": 4,
+      "title": "新品長褲",
+      "price": 120,
+      "img": "/public/image/product4.jpg"
+    },
+    {
+      "id": 5,
+      "title": "休閒套裝",
+      "price": 220,
+      "img": "/public/image/product5.jpg"
+    }
+  ]
+}
