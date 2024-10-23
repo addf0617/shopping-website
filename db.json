@@ -2,33 +2,38 @@
   "products": [
     {
       "id": 1,
-      "title": "新品套裝",
+      "title": "Gray Blazer",
       "price": 200,
-      "img": "/public/image/product1.jpg"
+      "img": "product1.jpg",
+      "tag": "new"
     },
     {
       "id": 2,
-      "title": "休閒鞋",
+      "title": "Sneakers",
       "price": 50,
-      "img": "/public/image/product2.jpg"
+      "img": "product2.jpg",
+      "tag": "sale"
     },
     {
       "id": 3,
-      "title": "手提包",
+      "title": "Tote Bag",
       "price": 80,
-      "img": "/public/image/product3.jpg"
+      "img": "product3.jpg",
+      "tag": "sale"
     },
     {
       "id": 4,
-      "title": "新品長褲",
+      "title": "Track Pants ",
       "price": 120,
-      "img": "/public/image/product4.jpg"
+      "img": "product4.jpg",
+      "tag": "new"
     },
     {
       "id": 5,
-      "title": "休閒套裝",
+      "title": "Gray Hoodie Terno",
       "price": 220,
-      "img": "/public/image/product5.jpg"
+      "img": "product5.jpg",
+      "tag": "young"
     }
   ]
 }

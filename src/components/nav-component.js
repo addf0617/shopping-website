@@ -8,7 +8,7 @@ const NavComponent = () => {
       <nav className="navbar navbar-expand-md">
         <div className="container">
           <div className="logo navbar-brand">
-            <NavLink>
+            <NavLink to={"/"}>
               <img src={logo} alt="logo" />
               <h1>FASHION</h1>
             </NavLink>
@@ -33,13 +33,13 @@ const NavComponent = () => {
               <NavLink to={"/"} className="nav-item">
                 CATALOGUE
               </NavLink>
-              <NavLink to={"/shop"} className="nav-item">
+              <NavLink to={"/products"} className="nav-item">
                 FASHION
               </NavLink>
-              <NavLink to={"/shop"} className="nav-item">
+              <NavLink to={"/products"} className="nav-item">
                 FAVOURITE
               </NavLink>
-              <NavLink to={"/shop"} className="nav-item">
+              <NavLink to={"/products"} className="nav-item">
                 LIFESTYLE
               </NavLink>
               <NavLink className="nav-item">

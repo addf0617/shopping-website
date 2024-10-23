@@ -2,19 +2,25 @@ import React from "react";
 import { Link } from "react-router-dom";
 
 const ShopPageCard = (props) => {
-  const { link, img, title, price } = props;
+  const { link, img, title, price, className } = props;
 
   return (
-    <div className="card custom-card">
+    <div className={`card custom-card ${className}`}>
       <Link href={link ? link : "#"}>
         <div className="img-container">
-          <img src={img} className="card-img-top" alt="Hoodies & Sweatshirt" />
+          <img
+            src={`image/${img}`}
+            className="card-img-top"
+            alt="圖片來自: pexels.com/@godisable-jacob-226636/"
+          />
         </div>
       </Link>
       <div className="card-info">
         <div className="card-text col-11">
-          <h4>{title ? title : "title"}</h4>
-          <p>$ {price}</p>
+          <strong>
+            <h5>{title ? title : "title"}</h5>
+          </strong>
+          <p>$ {price ? price : 0}</p>
         </div>
         <Link href={link ? link : "#"}>
           <i className="fa-solid fa-arrow-right"></i>
