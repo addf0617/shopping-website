@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 import heroPNG from "../images/hero-section-removebg.png";
 
@@ -21,7 +22,9 @@ const HeroComponent = () => {
               <h1>CLOTHES.</h1>
               <p>Live for Influential and Innovative fashion!</p>
               <div className="shop-btn">
-                <button className="btn btn-dark">Shop Now</button>
+                <Link to={"/products"}>
+                  <button className="btn btn-dark">Shop Now</button>
+                </Link>
               </div>
             </div>
           </div>

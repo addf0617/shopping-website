@@ -11,13 +11,25 @@ const NewArrivalsComponent = () => {
       <div className="container">
         <div className="row">
           <div className="col-md-6 col-lg-4">
-            <CardComponent img={hoodies} title={"Hoodies & Sweatshirt"} />
+            <CardComponent
+              img={hoodies}
+              title={"Hoodies & Sweatshirt"}
+              link={"/products?tag=new"}
+            />
           </div>
           <div className="col-md-6 col-lg-4">
-            <CardComponent img={coats} title={"Coats & Parkas"} />
+            <CardComponent
+              img={coats}
+              title={"Coats & Parkas"}
+              link={"/products?tag=new"}
+            />
           </div>
           <div className="col-md-6 col-lg-4">
-            <CardComponent img={TShirt} title={"Tee & T-Shirt"} />
+            <CardComponent
+              img={TShirt}
+              title={"Tee & T-Shirt"}
+              link={"/products?tag=new"}
+            />
           </div>
         </div>
       </div>

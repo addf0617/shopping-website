@@ -9,7 +9,7 @@ const ShopPageCard = (props) => {
       <Link href={link ? link : "#"}>
         <div className="img-container">
           <img
-            src={`image/${img}`}
+            src={`data/image/${img}`}
             className="card-img-top"
             alt="圖片來自: pexels.com/@godisable-jacob-226636/"
           />

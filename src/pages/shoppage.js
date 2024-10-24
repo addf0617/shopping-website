@@ -7,14 +7,22 @@ import ShopPageCard from "../components/shopPageCard-component";
 
 const ShopPage = () => {
   const [products, setProducts] = useState([]);
+  const [error, setError] = useState(null);
   const location = useLocation();
   useEffect(() => {
+    setError(null);
     axios
-      .get(`http://localhost:3001/products${location.search}`)
+      .get("http://localhost:3000/data/products.json")
       .then((res) => {
-        setProducts(res.data);
+        let data;
+        if (location.search) {
+          //目前的篩選條件只有tag
+          let filter = new URLSearchParams(location.search).get("tag");
+          data = res.data.products.filter((product) => product.tag === filter);
+        } else data = res.data.products;
+        setProducts(data);
       })
-      .catch((err) => console.log(err));
+      .catch((err) => setError(err));
   }, [location]);
 
   return (
@@ -25,7 +33,10 @@ const ShopPage = () => {
         </div>
         <div className="col">
           <div className="row">
-            {products.length === 0 && <h3>No Products...</h3>}
+            {products.length === 0 && !error && <h3>No Products...</h3>}
+            {products.length === 0 && error && (
+              <div className="alert alert-danger">{error.message}</div>
+            )}
             {products.map((product) => {
               return (
                 <ShopPageCard
