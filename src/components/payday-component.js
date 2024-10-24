@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import paydayImg from "../images/payday/image_12-removebg-preview.png";
 
 const PaydayComponent = () => {
@@ -32,7 +33,9 @@ const PaydayComponent = () => {
               </div>
 
               <div className="shop-btn">
-                <button className="btn btn-dark">Shop Now</button>
+                <Link to={"/products?tag=sale"}>
+                  <button className="btn btn-dark">Shop Now</button>
+                </Link>
               </div>
             </div>
           </div>

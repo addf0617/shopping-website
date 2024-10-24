@@ -3,10 +3,11 @@ import { Link } from "react-router-dom";
 
 const CardComponent = (props) => {
   const { img, link, title } = props;
+  console.log(link);
 
   return (
     <div className="card custom-card">
-      <Link href={link ? link : "#"}>
+      <Link to={link ? link : "#"}>
         <div className="img-container">
           <img src={img} className="card-img-top" alt="Hoodies & Sweatshirt" />
         </div>
