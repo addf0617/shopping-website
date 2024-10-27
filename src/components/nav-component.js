@@ -33,7 +33,7 @@ const NavComponent = () => {
               <NavLink to={"/"} className="nav-item">
                 CATALOGUE
               </NavLink>
-              <NavLink to={"/products"} className="nav-item">
+              <NavLink to={"/products"} className="nav-item" end>
                 FASHION
               </NavLink>
               <NavLink to={"/about"} className="nav-item">
