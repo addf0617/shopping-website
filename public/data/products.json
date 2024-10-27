@@ -2,37 +2,37 @@
   "products": [
     {
       "id": 1,
-      "title": "Gray Blazer",
+      "title": "Blazer",
       "price": 200,
-      "img": "product1.jpg",
+      "img": "data/image/product1.jpg",
       "tag": "new"
     },
     {
       "id": 2,
       "title": "Sneakers",
       "price": 50,
-      "img": "product2.jpg",
+      "img": "data/image/product2.jpg",
       "tag": "sale"
     },
     {
       "id": 3,
       "title": "Tote Bag",
       "price": 80,
-      "img": "product3.jpg",
+      "img": "data/image/product3.jpg",
       "tag": "sale"
     },
     {
       "id": 4,
       "title": "Track Pants ",
       "price": 120,
-      "img": "product4.jpg",
+      "img": "data/image/product4.jpg",
       "tag": "new"
     },
     {
       "id": 5,
-      "title": "Gray Hoodie Terno",
+      "title": "Hoodie Terno",
       "price": 220,
-      "img": "product5.jpg",
+      "img": "data/image/product5.jpg",
       "tag": "young"
     }
   ]

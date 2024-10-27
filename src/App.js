@@ -9,6 +9,7 @@ import Layout from "./pages/layout";
 import Homepage from "./pages/homepage";
 import ShopPage from "./pages/shoppage";
 import AboutPage from "./pages/aboutPage";
+import ProductPage from "./pages/productPage";
 import NotFoundPage from "./pages/notfoundPage";
 
 import "./style/main.css";
@@ -19,6 +20,7 @@ const router = createBrowserRouter(
       <Route index element={<Homepage />} />
       <Route path="/products" element={<ShopPage />} />
       <Route path="/about" element={<AboutPage />} />
+      <Route path="/products/:productId" element={<ProductPage />} />
       <Route path="*" element={<NotFoundPage />} />
     </Route>
   ),

@@ -28,7 +28,7 @@ const ShopPage = () => {
   return (
     <div className="container-fluid shop-page">
       <div className="row">
-        <div className="col-sm-2">
+        <div className="col-sm-3">
           <AsideBarComponent />
         </div>
         <div className="col">
@@ -43,6 +43,7 @@ const ShopPage = () => {
                   img={product.img}
                   title={product.title}
                   price={product.price}
+                  link={`/products/${product.id}`}
                   key={product.id}
                   className="col-12 col-md-4 col-xl-3"
                 />
