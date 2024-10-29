@@ -10,6 +10,7 @@ import Homepage from "./pages/homepage";
 import ShopPage from "./pages/shoppage";
 import AboutPage from "./pages/aboutPage";
 import ProductPage from "./pages/productPage";
+import CartPage from "./pages/cartPage";
 import NotFoundPage from "./pages/notfoundPage";
 
 import "./style/main.css";
@@ -21,6 +22,7 @@ const router = createBrowserRouter(
       <Route path="/products" element={<ShopPage />} />
       <Route path="/about" element={<AboutPage />} />
       <Route path="/products/:productId" element={<ProductPage />} />
+      <Route path="/cart" element={<CartPage />} />
       <Route path="*" element={<NotFoundPage />} />
     </Route>
   ),
