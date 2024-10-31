@@ -1,7 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { useLocation } from "react-router-dom";
 import axios from "axios";
-
 import AsideBarComponent from "../components/asideBar-component";
 import ShopPageCard from "../components/shopPageCard-component";
 
