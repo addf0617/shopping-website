@@ -3,11 +3,10 @@ import { Link } from "react-router-dom";
 
 const ShopPageCard = (props) => {
   const { link, img, title, price, className } = props;
-  console.log(img);
 
   return (
     <div className={`card custom-card ${className}`}>
-      <Link to={link ? link : "#"} state={{ img, title, price }}>
+      <Link to={link ? link : "#"}>
         <div className="img-container">
           <img
             src={img}

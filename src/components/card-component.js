@@ -3,7 +3,6 @@ import { Link } from "react-router-dom";
 
 const CardComponent = (props) => {
   const { img, link, title } = props;
-  console.log(link);
 
   return (
     <div className="card custom-card">
