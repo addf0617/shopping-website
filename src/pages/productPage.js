@@ -1,33 +1,19 @@
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
 import { useLocation, useNavigate } from "react-router-dom";
 import { useDispatch, useSelector } from "react-redux";
+import { useProduct } from "../hooks/useProduct";
 import { addCartItem, selectCartItems } from "../feature/cart/cartSlice";
-import axios from "axios";
 import { nanoid } from "nanoid";
 
 const ProductPage = () => {
   let location = useLocation();
   let navigate = useNavigate();
-  let [data, setData] = useState({});
-  let [error, setError] = useState(null);
   const [size, setSize] = useState("34");
   const [color, setColor] = useState("gray");
   let dispatch = useDispatch();
   let cartItems = useSelector(selectCartItems);
   let id = Number(location.pathname.split("/").pop());
-
-  //已該id找到對應的商品
-  useEffect(() => {
-    setError(null);
-    axios
-      .get(`http://localhost:3000/data/products.json`)
-      .then((res) => {
-        console.log(res.data.products.find((product) => product.id === id));
-
-        setData(res.data.products.find((product) => product.id === id));
-      })
-      .catch((err) => setError(err));
-  }, []);
+  const { products, error, loading } = useProduct({ id });
 
   const colorSelectorHandler = (e) => {
     setColor(e.target.value);
@@ -38,29 +24,36 @@ const ProductPage = () => {
   };
 
   const addCartHandler = () => {
-    if (cartItems.find((item) => item.id === data.id && item.count === 5)) {
+    if (
+      cartItems.find((item) => item.id === products[0].id && item.count === 5)
+    ) {
       return alert("商品數量已達上限");
     }
-    dispatch(addCartItem({ ...data, color, size, count: 1, cartId: nanoid() }));
+    dispatch(
+      addCartItem({ ...products[0], color, size, count: 1, cartId: nanoid() })
+    );
     navigate("/cart");
   };
 
   return (
     <div className="container my-3">
-      {error && <div className="alert alert-danger">{error.message}</div>}
-      {!data && <h3>Product Not Found</h3>}
-      {data && (
+      {loading && <h3>Loading...</h3>}
+      {error && !loading && (
+        <div className="alert alert-danger">{error.message}</div>
+      )}
+      {!products[0] && !loading && <h3>Product Not Found</h3>}
+      {products[0] && (
         <div className="row gap-2 ">
           <div className="col-md-5">
             <img
-              src={`/shopping-website/${data.img}`}
+              src={`/shopping-website/${products[0].img}`}
               alt="Img 1"
               className="img-fluid"
             />
           </div>
           <div className="col-md-6 d-flex flex-column product-info">
-            <h4>{data.title}</h4>
-            <h2 className="text-danger">$ {data.price}</h2>
+            <h4>{products[0].title}</h4>
+            <h2 className="text-danger">$ {products[0].price}</h2>
             <hr />
             <span>choose color:</span>
             <div className="color-picker">
