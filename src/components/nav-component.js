@@ -39,8 +39,10 @@ const NavComponent = () => {
               <NavLink to={"/about"} className="nav-item">
                 ABOUT
               </NavLink>
-              <NavLink className="nav-item">
-                <button className="nav-btn">SIGN UP</button>
+              <NavLink to={"/cart"} className="nav-item">
+                <button className="nav-btn">
+                  <i className="fa-solid fa-cart-shopping"></i> CART
+                </button>
               </NavLink>
             </ul>
           </div>
