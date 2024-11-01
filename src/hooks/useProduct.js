@@ -10,7 +10,7 @@ export function useProduct(search = null) {
     setLoading(true);
     setError(null);
     axios
-      .get("http://localhost:3000/data/products.json")
+      .get("https://addf0617.github.io/shopping-website/data/products.json")
       .then((res) => {
         let filteredProducts = res.data.products;
         if (search?.tag) {

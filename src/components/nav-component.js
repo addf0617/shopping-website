@@ -39,6 +39,9 @@ const NavComponent = () => {
               <NavLink to={"/about"} className="nav-item">
                 ABOUT
               </NavLink>
+              <NavLink to={"/test"} className="nav-item">
+                test
+              </NavLink>
               <NavLink to={"/cart"} className="nav-item">
                 <button className="nav-btn">
                   <i className="fa-solid fa-cart-shopping"></i> CART
